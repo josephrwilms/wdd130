@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    background-color: rgb(255, 161, 219);
+}
+ol {
+    text-align: center;
+}
+
+img {
+    max-width: 40%;
+}
+
+div {
+    text-align: center;
+}
+
+h1:hover {
+    color: black;
+}
+
+h1 {
+    color: white;
+}
