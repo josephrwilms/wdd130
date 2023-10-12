@@ -1,0 +1,16 @@
+#secondary-img {
+    width: 20%;
+    margin: 5%;
+}
+
+#primary-image {
+    width: 100%;
+    border: none;
+    padding: none;
+    margin: none;
+}
+
+body {
+    background-color: grey; 
+    margin: 0;
+}
