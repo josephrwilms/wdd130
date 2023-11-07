@@ -109,7 +109,7 @@ footer {
     background-color: #dddddd; 
     color: #d9c2a3;
     padding: 25px 50px;
-    margin-top: 200px; 
+    margin-top: 100px; 
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -225,6 +225,22 @@ main section img {
     box-sizing: border-box
 }
 
+/* FAQ PAGE */
+
+.faq-image {
+    width: 40%;
+    border-radius: 10%;
+    margin: 20px;
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
