@@ -103,11 +103,12 @@ nav {
   text-align: center;
   font-size: 1.2em;
 }
-nav  {
+
+nav {
   list-style-type: none;
   display: flex;
-
 }
+
 nav a {
   padding:1em;
   min-width: 120px;
@@ -115,9 +116,11 @@ nav a {
   padding: 10px;
 
 }
+
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
 }
+
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);

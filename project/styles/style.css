@@ -1,0 +1,270 @@
+:root {
+  /* Your color palette */
+  --primary-color: #27B5DC;
+  --secondary-color: #2F83DC;
+  --accent1-color: #3844DC;
+  --accent2-color: #1c226e;
+
+  /* Your chosen fonts */
+  --heading-font: Verdana, Tahoma, sans-serif;
+  --paragraph-font: Georgia, "Times New Roman", serif;
+
+  /* Colors for different backgrounds and texts */
+  --headline-color-on-white: #1c226e;
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: #3844DC;
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: #2F83DC;
+  --nav-link-color: black;
+  --nav-background-color: #27B5DC;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #3844DC;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: var(--nav-background-color);
+  color: var(--headline-color-on-color);
+}
+
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+
+header > h1,
+header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+
+/* Your color styles */
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: #999;
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+/* Navigation styles */
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  color: var(--nav-link-color);
+}
+
+.nav-links a:link,
+.nav-links a:visited {
+  color: var(--nav-link-color);
+}
+
+.nav-links a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+/* Logo styles */
+.logo img {
+  max-width: 50px;
+  height: auto;
+}
+
+/* Video container and text overlay styles */
+.video-container {
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  text-align: right;
+  max-width: 40%;
+  color: white;
+  z-index: 1;
+}
+
+.text-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.text-overlay p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.main {
+  position: relative;
+}
+
+footer {
+  background-color: var(--nav-background-color);
+  color: var(--nav-hover-link-color);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-nav a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: var(--nav-hover-link-color);
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--nav-link-color);
+}
+
+.copyright {
+  font-size: 0.9em;
+}
+
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
