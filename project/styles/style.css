@@ -23,9 +23,7 @@
 
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* Adjust padding as needed */
   background-color: var(--nav-background-color);
   color: var(--headline-color-on-color);
 }
@@ -101,7 +99,7 @@ p.colored {
 }
 
 .nav-links a {
-  padding: 1em;
+  height: auto;
   min-width: 120px;
   text-decoration: none;
   color: var(--nav-link-color);
@@ -119,7 +117,7 @@ p.colored {
 
 /* Logo styles */
 .logo img {
-  max-width: 50px;
+  max-width: 100px;
   height: auto;
 }
 
